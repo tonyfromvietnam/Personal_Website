@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/duychinhdinh.css">
+    <script src="register.js" defer></script>
+</head>
+<body id="login-page">
+    <h1>Welcome to Duy Chinh Dinh (Tony)'s Portfolio</h1>
+    
+    <form method="POST" action="register.php">
+        <fieldset>
+            <p>
+                <div style="text-align:center;">
+                    <h1>
+                        Register
+                    </h1>
+                </div>
+            </p>
+            <div style="text-align:center;">
+                <p>First Name<input type="text" name="fname" required></p>
+            </div>
+            <div style="text-align:center;">
+                <p>Last Name<input type="text" name="sname" required></p>
+            </div>
+            <div style="text-align:center;">
+                <p>Email<input type="email" name="email" required></p>
+            </div>
+            <p>
+                Password must include: Uppercase, lowercase, number.
+                <div style="text-align:center;">
+                    <input type="password" placeholder="Password" name="pass1" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" id="password_reg">
+                </div>
+                <div style="text-align:center;">
+                    <input type="password" placeholder="Confirm password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" id="password_reg_confirm">
+                </div>
+            </p>
+            <p>
+                <div style="text-align:center;">
+                    <input type="submit" class="function" value="Register">
+                </div>
+            </p>
+            <a href= "login.php">Log in</a>
+            <a href= "index.php">Home page</a>
+        </fieldset>
+    </form>
+</body>
+</html>
